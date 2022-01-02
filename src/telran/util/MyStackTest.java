@@ -78,8 +78,6 @@ class MyStackTest {
 		assertTrue(flagExc);
 		}
 		
-	
-
 	private void pops(int nPops) {
 		for(int i = 0; i < nPops; i++) {
 			stack.pop();
