@@ -13,13 +13,19 @@ public class MyStack {
 	private LinkedList<Integer> list = new LinkedList<>();
 	private LinkedList<Integer> listMaxValues = new LinkedList<>();
 
-	/**
+	/**listMaxValues
 	 * adds the given element at the and of stack
 	 * 
 	 * @param elment
 	 */
 	void push(Integer elment) {
 		list.add(elment);
+		/* V.R. It is possible to do the same a little bit shorter 
+		if (listMaxValues.isEmpty() || element >= maxElements.getLast()) {
+			listMaxValues.add(element);
+		}
+		 * 
+		 */
 		if (listMaxValues.isEmpty()) {
 			listMaxValues.add(elment);
 		} else {
